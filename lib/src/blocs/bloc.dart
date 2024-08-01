@@ -16,5 +16,4 @@ class Bloc extends Validators {
     _emailController.close();
     _passwordController.close();
   }
-
 }
