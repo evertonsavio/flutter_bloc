@@ -64,9 +64,7 @@ Widget submitButton(block) {
       stream: block.submitValid,
       builder: (context, snapshot) {
         return ElevatedButton(
-          onPressed: snapshot.hasData ? (){
-            print('Login');
-          } : null,
+          onPressed: snapshot.hasData ? block.submit : null,
           child: Text('Login'),
         );
       }
